@@ -2,6 +2,11 @@
 <html lang="en-US">
 <head>
     <title>Images</title>
+    <script>
+        function myFunction() {
+            alert("You clicked the coffee cup!");
+        }
+    </script>
 </head>
 <body>
     <img src="img.png" alt="W3Schools">
@@ -16,5 +21,13 @@
 
     <p><img src="img.png" alt="Smiley face" style="float:left;width:42px;height:42px;">
         The image will float to the left of the text.</p>
+
+    <img src="workspace.png" alt="Workplace" usemap="#workmap">
+
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="image-map/computer.htm">
+        <area shape="rect" coords="290,172,333,250" alt="Phone" href="image-map/phone.htm">
+        <area shape="circle" coords="337,300,44" alt="Coffee" href="image-map/coffee.htm" onclick="myFunction()">
+    </map>
 </body>
 </html>
