@@ -3,6 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Table</title>
+    <style>
+        .collapsed td {
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+        .collapsed th {
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
 <table>
@@ -23,7 +33,7 @@
     </tr>
 </table>
 
-<table>
+<table class="collapsed" style="border-collapse: collapse; border: 1px solid black;">
     <tr>
         <th>Person 1</th>
         <th>Person 2</th>
