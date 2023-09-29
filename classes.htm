@@ -44,5 +44,19 @@
 
 <h2 class="city">Paris</h2>
 <p class="city">Paris is the capital of France</p>
+
+<button onclick="myFunction()">Hide elements</button>
+<h2 class="toggle">London</h2>
+<h2 class="toggle">Paris</h2>
+<h2 class="toggle">Tokyo</h2>
+
+<script>
+    function myFunction() {
+        var x = document.getElementsByClassName("toggle");
+        for (var i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+    }
+</script>
 </body>
 </html>
